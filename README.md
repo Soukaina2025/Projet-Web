@@ -1,2 +1,2 @@
-# Projet-Web
-Application Web de Gestion des Projets des Étudiants de l’ENSA
+# Projet-web
+Application Web de Gestion des Projets des Étudiants de l’ENSA.
