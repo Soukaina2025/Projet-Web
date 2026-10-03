@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ENSA Kénitra</title>
+    <!-- Optimisation des imports CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+    (function(){
+      emailjs.init({
+        publicKey: "Mb21DjjO93ySp6IMz",
+      });
+    })();
+    </script>
+</head>
+<body>
+    <header class="header-wrapper bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand logo" href="../projets_espaces_folder_vf_apropos/index.html">
+                <img src="images/ensa_logo.png" alt="Logo ENSA" loading="lazy">
+            </a>
+
+            <button class="navbar-toggler toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav nav-links">
+                    <li class="nav-item"><a class="nav-link" href="../projets_espaces_folder_vf_apropos/index.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../reglements_page_folder_vf/index.html">Règlement</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../contact_folder_vf/index.html">Contact</a></li>
+                </ul>      
+                
+                <div class="social_icons">
+                    <a href="https://www.instagram.com/ensak.official" class="text-dark" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://ma.linkedin.com/company/ensa-kenitra-official" class="text-dark" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1>Contactez-nous</h1>
+            <p>Pour toute question ou information supplémentaire, n'hésitez pas à nous contacter</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-wrapper">
+                <section class="form-section">
+                    <h2 class="form-title">Envoyez-nous un message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="nom" class="form-control" required>
+                            <label for="nom" class="form-label">Nom complet</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" required>
+                            <label for="email" class="form-label">Adresse email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="telephone" class="form-control">
+                            <label for="telephone" class="form-label">Téléphone (optionnel)</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="sujet" class="form-control" required>
+                                <option value="" selected disabled>Sélectionnez un sujet</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                            <label for="sujet" class="form-label">Sujet de votre message</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" required rows="5"></textarea>
+                            <label for="message" class="form-label">Votre message</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                    </form>
+                </section>
+                
+                <section class="info-section">
+                    <div class="info-card">
+                        <h3>Coordonnées</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt info-icon" aria-hidden="true"></i>
+                            <div class="info-text">
+                                <p>BP 241 Av. de L'Université, Kénitra 14000</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt info-icon" aria-hidden="true"></i>
+                            <div class="info-text">
+                                <p>(+212) 5 37 37 67 65</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope info-icon" aria-hidden="true"></i>
+                            <div class="info-text">
+                                <p>contact@ensa.uit.ac.ma</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Horaires d'ouverture</h3>
+                        <div class="info-item">
+                            <i class="fas fa-clock info-icon" aria-hidden="true"></i>
+                            <div class="info-text">
+                                <p>Lundi - Vendredi: 8h30 - 16h30</p>
+                                <p>Samedi: 9h - 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.9978420946545!2d-6.583234799999999!3d34.248598699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda759f9847310ff%3A0xfcdd86f18958657d!2sENSA%20%3A%20%C3%89cole%20Nationale%20des%20Sciences%20Appliqu%C3%A9es_K%C3%A9nitra!5e0!3m2!1sfr!2sma!4v1744370017239!5m2!1sfr!2sma" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation ENSA Kénitra"></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-wrapper">
+        <div class="footer-section container">
+            <div class="footer-info">
+                <img src="images/LOGO-ENSA.png" alt="Logo ENSA" loading="lazy">
+                <p><a href="https://ensa.uit.ac.ma/" target="_blank" style="color: white;">Visiter le site officiel</a></p>
+            </div>
+            <div class="footer-links">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="../projets_espaces_folder_vf_apropos/index.html">À propos</a></li>
+                    <li><a href="../reglements_page_folder_vf/index.html">Règlement</a></li>
+                    <li><a href="../contact_folder_vf/index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Réseaux Sociaux</h3>
+                <div class="footer_icons">
+                    <a href="https://www.instagram.com/ensak.official" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://ma.linkedin.com/company/ensa-kenitra-official" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+                
+                <a class="contact_link" href="../contact_folder_vf/index.html">Contactez-nous</a>
+                <p>(+212) 5 37 37 67 65</p>
+                <p>Campus universitaire, BP 241, Kénitra – Maroc</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>École Nationale des Sciences Appliquées © 2025 Université Ibn Tofail. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let parms = {
+                message: document.getElementById('message').value,
+                email: document.getElementById('email').value,
+                name: document.getElementById('nom').value,
+                subject: document.getElementById('sujet').value,
+                phone: document.getElementById('telephone').value || 'Non fourni'
+            };
+            
+            emailjs.send("service_sjsyrk4", "template_l0ad40o", parms)
+                .then(function() {
+                    alert("Votre message a été envoyé avec succès !");
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    alert("Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer.");
+                    console.error('Erreur EmailJS:', error);
+                });
+        });
+    </script>
+</body>
+</html>
